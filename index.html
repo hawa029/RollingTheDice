@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descritpion" content="Roll The Dice - The Ultimate game">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" async defer></script>
+    <script src="js/sounds.js" defer></script>
+    <title>Roll The Dice - The Ultimate game v1.0</title>
+</head>
+<body class="#f0f4c3 lime lighten-4">
+    <main class="container">
+        <section class="row">
+            <header class="col s12 card-panel #f9fbe7 lime lighten-5 z-depth-4">
+							<div>
+								<h1 class="text-accent-2">Roll The Dice</h1>
+								<h5 class="descritpion">The Ultimate Game</h5>
+							</div>
+							<!--Header buttons SECTION-->
+              <div class="btnGlobal">
+						<a class="btn-floating btn-large waves-effect waves-light red" id="newGame">
+							<i class="material-icons">casino</i>
+						</a>
+
+						<a class="btn-floating btn-large waves-effect waves-light red" id="sounds">
+							<i class="material-icons">volume_up</i>
+						</a>
+						<a class="btn-floating btn-large waves-effect waves-light red" id="volume_off">
+							<i class="material-icons">volume_off</i>
+						</a>
+                  <a class="btn-floating btn-large waves-effect waves-light red sidenav-trigger" 
+							href="#slide-out" data-target="slide-out">
+							<i class="material-icons">settings</i>
+						</a>
+					</div> 
+					<audio src="sounds/newGameSound.mp3" autoplay  type="audio"></audio>
+            </header>
+
+            <!--PLAYER ONE SECTION-->
+            <div class="col s12 m4 l3 card">
+                <div class="card-content #eeff41 z-depth-4 active" id="playerOne">
+
+                    <div class="card-title center" id="playerOneName">
+                        <h4>Player 1</h4>
+                    </div>
+                         <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
+                            <div class="card-title">
+                                <h4>Global <span id="displayScore1">0</span></h4>
+                                <h4>Round  <span id="displayTurn1">0</span></h4>
+                            </div>
+                </div>
+            </div>
+
+            <!--GAME ZONE DESCRIPTION -->
+            <div class="col s12 m4 l6 card">
+                <div class="card-content " id="gameZone">
+            		<div id="zone">
+                       <!--In the container come the random images-->
+						</div>
+        		</div>
+				<div class="global row center-align">
+
+                	<a class=" btn-large waves-effect waves-light red" id="roll">
+							 <em class="material-icons">loop</em> Roll</a>
+
+                	<a class=" btn-large waves-effect waves-light red " id="hold">
+							 <em class="material-icons">vpn_key</em>Hold</a>
+            	</div>	
+            </div>
+								
+           <!--PLAYER TWO SECTION-->
+            <div class="col s12 m4 l3 card">
+                <div class="card-content #eeff41  z-depth-4" id="playerTwo">
+
+                    <div class="card-title center" id="playerTwoName">
+                        <h4>Player 2</h4> 
+                    </div>
+                         <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
+                            <div class="">
+                                <h4>Global     <span id="displayScore2">0</span></h4>
+                                <h4>Round      <span id="displayTurn2">0</span></h4>
+                            </div>
+                </div>
+            </div>
+		</section>  
+    </main>
+	 <!--RULES SIDENAV SECTION-->
+    <ul>
+         <li id="slide-out" class="sidenav #ffab40 orange accent-2">
+            <a href="#slide-out" data-target="slide-out" class="sidenav-close"><i class="material-icons">close</i></a>
+                <h1>Règles du jeu</h1>
+                  <div>
+                     <p>Le jeu comprend 2 joueurs sur un seul et même écran.</p>
+                     <p>Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).<br> 
+                        À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé <br> 
+                        autant de fois qu'il le souhaite. Le résultat d’un lancer est ajouté au ROUND.</p>
+                     <p>Lors de son tour, le joueur peut décider à tout moment de: </p>
+                    
+                     <p>Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. <br>
+                        Ce sera alors au tour de l’autre joueur de lancer le dé.</p>
+                     <p>S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.</p>
+                     <p>Le premier joueur qui atteint les 100 points sur global gagne le jeu.</p>
+                     <p>Amusez-vous bien !</p>
+                  </div>    
+        	</li>      
+    </ul> 
+	<footer class="center-align ">&copy;2021 - Jean Paul SOSSAH</footer>
+</body>
+</html>

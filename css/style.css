@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Josefin+Sans:wght@700&display=swap');
+
+body {
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+footer {
+    height: 50px;
+    padding-top: 1em;
+    color: antiquewhite;
+    background: rgb(44, 32, 17);
+}
+
+.sidenav {
+    display: none;
+}
+
+header {
+    display:flex;
+    padding: 1em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.btnGlobal {
+    padding: 2em;
+}
+.global {
+    
+    font-weight: bold;
+}
+.btnGlobal a {
+    margin: 1em;
+    padding: 1em;
+}
+.sidenav {
+    display: block;
+    width: 500px;
+    padding:2em;
+}
+
+.active {
+    background-color: brown;
+    color: white;
+}
+
+#zone {
+    height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
