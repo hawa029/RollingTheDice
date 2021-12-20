@@ -1,0 +1,6 @@
+#Ingnorer le dossier de travail VSCode
+/.vscode
+
+
+#Si par hasard un fichier récapitulatif en pdf
+*pdf
