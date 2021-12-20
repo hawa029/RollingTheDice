@@ -18,7 +18,7 @@ Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 
 # Materiels Utilisés
 
-* Html et CSS Materialize
+* Html et  le framework CSS Materialize
 * Javascript
 
-- codes couleurs : #a83279; #d42c35; #f5740a; 
+ 
