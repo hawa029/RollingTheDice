@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/main.js" defer></script>
     <script src="js/animations.js" async defer></script>
-    <script src="js/sounds.js" defer></script>
+    <script src="js/sounds.js" async defer></script>
     <title>Roll The Dice - The Ultimate game v1.0</title>
 </head>
 <body class="#f0f4c3 lime lighten-4">
@@ -26,38 +25,33 @@
 							<!--Header buttons SECTION-->
               <div class="btnGlobal">
 						<a class="btn-floating btn-large waves-effect waves-light red" id="newGame">
-							<i class="material-icons">casino</i>
+							<i class="material-icons">casino</i>start
 						</a>
 
-						<a class="btn-floating btn-large waves-effect waves-light red" id="sounds">
-							<i class="material-icons">volume_up</i>
+						<a class="btn-floating btn-large waves-effect waves-light red" id="volume_up">
+							<i class="material-icons">volume_up</i>Up
 						</a>
 						<a class="btn-floating btn-large waves-effect waves-light red" id="volume_off">
-							<i class="material-icons">volume_off</i>
+							<i class="material-icons">volume_off</i>Off
 						</a>
                   <a class="btn-floating btn-large waves-effect waves-light red sidenav-trigger" 
 							href="#slide-out" data-target="slide-out">
 							<i class="material-icons">settings</i>
 						</a>
 					</div> 
-					<audio src="sounds/newGameSound.mp3" autoplay  type="audio"></audio>
+					<audio src="sounds/newGameSound.mp3" type="audio" id="newGameSound"></audio>
             </header>
 
             <!--PLAYER ONE SECTION-->
-            <div class="col s12 m4 l3 card">
-                <div class="card-content #eeff41 z-depth-4 active" id="playerOne">
-
-                    <div class="card-title center" id="playerOneName">
-                        <h4>Player 1</h4>
-                    </div>
-                         <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
-                            <div class="card-title">
-                                <h4>Global <span id="displayScore1">0</span></h4>
-                                <h4>Round  <span id="displayTurn1">0</span></h4>
-                            </div>
-                </div>
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4" id="playerOne">
+                <h4>Player 1</h4> 
+                  
+                <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
+                           
+                    <h5>Global</h5>     <span id="displayScore1">0</span>
+                    <h5>Round</h5>     <span id="displayTurn1">0</span>
+                        
             </div>
-
             <!--GAME ZONE DESCRIPTION -->
             <div class="col s12 m4 l6 card">
                 <div class="card-content " id="gameZone">
@@ -76,18 +70,14 @@
             </div>
 								
            <!--PLAYER TWO SECTION-->
-            <div class="col s12 m4 l3 card">
-                <div class="card-content #eeff41  z-depth-4" id="playerTwo">
-
-                    <div class="card-title center" id="playerTwoName">
-                        <h4>Player 2</h4> 
-                    </div>
-                         <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
-                            <div class="">
-                                <h4>Global     <span id="displayScore2">0</span></h4>
-                                <h4>Round      <span id="displayTurn2">0</span></h4>
-                            </div>
-                </div>
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4 active" id="playerTwo">
+                <h4>Player 2</h4> 
+                  
+                <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
+                           
+                    <h5>Global</h5>     <span id="displayScore2">0</span>
+                    <h5>Round</h5>     <span id="displayTurn2">0</span>
+                        
             </div>
 		</section>  
     </main>
