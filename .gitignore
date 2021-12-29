@@ -1,6 +1,7 @@
 #Ingnorer le dossier de travail VSCode
 /.vscode
 
+*c_script.js
 
 #Si par hasard un fichier récapitulatif en pdf
 *pdf

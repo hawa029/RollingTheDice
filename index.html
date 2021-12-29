@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/animations.js" async defer></script>
-    <script src="js/sounds.js" async defer></script>
+    <script src="js/sounds.js" async></script>
     <title>Roll The Dice - The Ultimate game v1.0</title>
 </head>
 <body class="#f0f4c3 lime lighten-4">
@@ -43,40 +43,41 @@
             </header>
 
             <!--PLAYER ONE SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4" id="playerOne">
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4 currentPlayer" id="player-1">
                 <h4>Player 1</h4> 
                   
                 <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
-                           
-                    <h5>Global</h5>     <span id="displayScore1">0</span>
-                    <h5>Round</h5>     <span id="displayTurn1">0</span>
+                
+                        <h4>Global  :</h4><div id="score-1"></div>
+                        <h4>Round  :</h4><div id="turn-1"></div>
                         
             </div>
             <!--GAME ZONE DESCRIPTION -->
             <div class="col s12 m4 l6 card">
                 <div class="card-content " id="gameZone">
             		<div id="zone">
-                       <!--In the container come the random images-->
-						</div>
+                       <!--In this container come the random images-->
+					</div>
+                    <div class="card-panel" id="deResult"></div>
         		</div>
 				<div class="global row center-align">
 
-                	<a class=" btn-large waves-effect waves-light red" id="roll">
+                	<a class=" btn-large waves-effect waves-light red roll">
 							 <em class="material-icons">loop</em> Roll</a>
 
-                	<a class=" btn-large waves-effect waves-light red " id="hold">
+                	<a class=" btn-large waves-effect waves-light red hold">
 							 <em class="material-icons">vpn_key</em>Hold</a>
             	</div>	
             </div>
 								
            <!--PLAYER TWO SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4 active" id="playerTwo">
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4" id="player-2">
                 <h4>Player 2</h4> 
                   
                 <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
-                           
-                    <h5>Global</h5>     <span id="displayScore2">0</span>
-                    <h5>Round</h5>     <span id="displayTurn2">0</span>
+
+                        <h4>Global  :</h4>  <div id="score-2"></div>
+                        <h4>Round  :</h4><div id="turn-2"></div>
                         
             </div>
 		</section>  

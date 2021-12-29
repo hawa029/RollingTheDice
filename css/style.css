@@ -40,17 +40,25 @@ header {
     padding:2em;
 }
 
-.active {
+.currentPlayer {
     background-color: brown;
     color: white;
 }
-
+/*
 #zone {
     height: 300px;
-    width: 400px;
+    width: 300px;
+    align-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    
+    background-size: contain;  
 }
-
+*/
+#deResult  {
+    color:beige;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background:rgb(68, 17, 1);
+    width: 20px ;
+    height: 20px;
+}

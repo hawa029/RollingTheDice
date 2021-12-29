@@ -1,27 +1,35 @@
 //Fonction musique de début de jeu
 let Start = document.getElementById('newGame');
     Start.addEventListener('click', function() {
-    let gameMelody = new Audio ('sounds/newGameSound.mp3');
-    gameMelody.play()  
+          let gameMelody = new Audio ('sounds/newGameSound.mp3');
+          gameMelody.play()  
 
+//Set the function to start musique after a pause event
+let soundAgain = document.getElementById('volume_up');
+    soundAgain.addEventListener('click', function() {
+         gameMelody.play();
+      
+    });   
 
-     let switchOff = document.getElementById('volume_off');
+// function to stop musique on playing
+let switchOff = document.getElementById('volume_off');
      switchOff.addEventListener('click', function() {
           if(gameMelody.play()) {
                gameMelody.pause();
           }
-          
      });
-    
 })
 
-
-
-
-let bruit = document.getElementById('roll');
-	bruit.addEventListener('click', function() {
+//Sound when the Dice is rolling
+let bruit = document.querySelector('.roll')
+bruit.addEventListener('click', function() {
 		let bruit_de_dee = new Audio('sounds/cf_gagne.mp3');
-		bruit_de_dee.play();
-});
+		bruit_de_dee.play()
+
+let switchOff = document.getElementById('volume_off');
+     switchOff.addEventListener('click', function(){
+                  bruit_de_dee.pause();         
+     });
+})
 
 
