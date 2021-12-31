@@ -43,14 +43,18 @@
             </header>
 
             <!--PLAYER ONE SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4 currentPlayer" id="player-1">
-                <h4>Player 1</h4> 
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4 player-1 active">
+                <h4 id="player-1">Player 0ne</h4> 
                   
                 <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
-                
-                        <h4>Global  :</h4><div id="score-1"></div>
-                        <h4>Round  :</h4><div id="turn-1"></div>
-                        
+                    <div>
+                        <h4>Global  :</h4>
+                        <div class="playerOne-score" id="score-1"></div>
+                    </div>  
+                    <div>
+                        <h4>Round  :</h4>
+                        <div class="playerOne-round" id="round-1"></div>
+                    </div>    
             </div>
             <!--GAME ZONE DESCRIPTION -->
             <div class="col s12 m4 l6 card">
@@ -58,7 +62,9 @@
             		<div id="zone">
                        <!--In this container come the random images-->
 					</div>
-                    <div class="card-panel" id="deResult"></div>
+                    <div>
+                        <span id="deResult"></span>
+                    </div>
         		</div>
 				<div class="global row center-align">
 
@@ -71,14 +77,18 @@
             </div>
 								
            <!--PLAYER TWO SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4" id="player-2">
-                <h4>Player 2</h4> 
+            <div class="col s12 m4 l3 card #eeff41  z-depth-4 player-2">
+                <h4 id="player-2">Player Two</h4> 
                   
                 <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
-
-                        <h4>Global  :</h4>  <div id="score-2"></div>
-                        <h4>Round  :</h4><div id="turn-2"></div>
-                        
+                   <div>
+                        <h4>Global  :</h4>
+                        <div class="playerTwo-score" id="score-2"></div>
+                    </div>  
+                    <div>
+                        <h4>Round  :</h4>
+                        <div class="playerTwo-round" id="round-2"></div>
+                    </div> 
             </div>
 		</section>  
     </main>
