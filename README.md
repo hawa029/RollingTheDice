@@ -1,6 +1,6 @@
-# Création d’un petit jeu sur navigateur web à l’aide du DOM.
+# Création d’un petit jeu sur navigateur web avec les éléments du DOM.
 
-Travaux en cours ................
+Travaux en cours 
 
 ## Règles :
 
@@ -16,7 +16,7 @@ Lors de son tour, le joueur peut décider à tout moment de:
 - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
 Le premier joueur qui atteint les 100 points sur global gagne le jeu.
 
-# Materiels Utilisés
+# Materiels utilisés
 
 * Html et  le framework CSS Materialize
 * Javascript
