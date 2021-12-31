@@ -114,13 +114,17 @@ function init() {
     document.querySelector('#player-2').classList.remove('active');
 
     startGame = function () {
-
-        document.getElementById('newGame').addEventListener('click', function() {
+        document.querySelector('#newGame').addEventListener('click', function (){
             return rollDice;
         })
-    } 
+    }
+     
 }
 
+let reset = document.querySelector('.reset').addEventListener('click', function() {
+            window.location.reload(true);
+        })
+  
 
 
 

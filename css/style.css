@@ -47,11 +47,16 @@ header {
 
 #zone {
     height: 300px;
-    width: 300px;
-    align-content: center;
+    width: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;  
+}
+#gameZone {
+    height: 400px;
+    width: 200px; 
+    align-content: center;
+    padding-left:150px;
 }
 
 /*#deResult  {
