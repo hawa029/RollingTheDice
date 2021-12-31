@@ -23,7 +23,7 @@ let switchOff = document.getElementById('volume_off');
 //Sound when the Dice is rolling
 let bruit = document.querySelector('.roll')
 bruit.addEventListener('click', function() {
-		let bruit_de_dee = new Audio('sounds/cf_gagne.mp3');
+		let bruit_de_dee = new Audio('sounds/BELLHand_Clochette.mp3');
 		bruit_de_dee.play()
 
 let switchOff = document.getElementById('volume_off');

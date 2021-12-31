@@ -73,7 +73,8 @@ document.getElementById('zone').url = `images/${randomNumber}.png`;
             document.querySelector('#score-' + currentPlayer).textContent = scores[currentPlayer];
             //Check if player is already the winner
             if(scores[currentPlayer] >= 100) {
-                document.querySelector('#player-' + currentPlayer).innerHTML = '<h1>Vainqueur !</h1>';
+                document.querySelector('#player-' + currentPlayer).innerHTML = '<h4>Vainqueur !</h4>';
+                document.querySelector('.winner-annunce').innerHTML = '<h3>Fin de la partie !</h3>';
                 game = false;
             }else {
                 nextPlayer();
