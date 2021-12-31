@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/animations.js" async defer></script>
-    <script src="js/sounds.js" async></script>
     <title>Roll The Dice - The Ultimate game v1.0</title>
 </head>
 <body class="#f0f4c3 lime lighten-4">
@@ -24,17 +22,17 @@
 							</div>
 							<!--Header buttons SECTION-->
               <div class="btnGlobal">
-						<a class="btn-floating btn-large waves-effect waves-light red" id="newGame">
+						<a class="btn-floating btn-large waves-effect waves-light purple" id="newGame">
 							<i class="material-icons">casino</i>start
 						</a>
 
-						<a class="btn-floating btn-large waves-effect waves-light red" id="volume_up">
+						<a class="btn-floating btn-large waves-effect waves-light blue" id="volume_up">
 							<i class="material-icons">volume_up</i>Up
 						</a>
-						<a class="btn-floating btn-large waves-effect waves-light red" id="volume_off">
+						<a class="btn-floating btn-large waves-effect waves-light orange" id="volume_off">
 							<i class="material-icons">volume_off</i>Off
 						</a>
-                  <a class="btn-floating btn-large waves-effect waves-light red sidenav-trigger" 
+                  <a class="btn-floating btn-large waves-effect waves-light grey sidenav-trigger" 
 							href="#slide-out" data-target="slide-out">
 							<i class="material-icons">settings</i>
 						</a>
@@ -62,17 +60,18 @@
             		<div id="zone">
                        <!--In this container come the random images-->
 					</div>
-                    <div>
-                        <span id="deResult"></span>
-                    </div>
+                    <div id="deResult"></div>
         		</div>
 				<div class="global row center-align">
 
-                	<a class=" btn-large waves-effect waves-light red roll">
+                	<a class=" btn-large waves-effect waves-light yellow roll">
 							 <em class="material-icons">loop</em> Roll</a>
 
-                	<a class=" btn-large waves-effect waves-light red hold">
+                	<a class=" btn-large waves-effect waves-light green hold">
 							 <em class="material-icons">vpn_key</em>Hold</a>
+
+                    <a class=" btn-large waves-effect waves-light blue reset">
+							 <em class="material-icons">delete_sweep</em>Reset</a>
             	</div>	
             </div>
 								
@@ -113,5 +112,9 @@
         	</li>      
     </ul> 
 	<footer class="center-align ">&copy;2021 - Jean Paul SOSSAH</footer>
+
+
+    <script src="js/animations.js"></script>
+    <script src="js/sounds.js"></script>
 </body>
 </html>
