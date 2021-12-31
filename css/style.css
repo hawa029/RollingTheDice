@@ -40,11 +40,11 @@ header {
     padding:2em;
 }
 
-.currentPlayer {
+.active {
     background-color: brown;
     color: white;
 }
-/*
+
 #zone {
     height: 300px;
     width: 300px;
@@ -53,8 +53,8 @@ header {
     background-position: center;
     background-size: contain;  
 }
-*/
-#deResult  {
+
+/*#deResult  {
     color:beige;
     font-size: 1.5rem;
     border-radius: 50px;
@@ -62,3 +62,4 @@ header {
     width: 20px ;
     height: 20px;
 }
+*/
