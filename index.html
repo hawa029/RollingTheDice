@@ -1,121 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descritpion" content="Roll The Dice - The Ultimate game">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <title>Roll The Dice - The Ultimate game v1.0</title>
-</head>
-<body class="#f0f4c3 lime lighten-4">
-    <main class="container">
-        <section class="row">
-            <header class="col s12 card-panel #f9fbe7 lime lighten-5 z-depth-4">
-							<div>
-								<h1 class="text-accent-2">Roll The Dice</h1>
-								<h5 class="descritpion">The Ultimate Game</h5>
-							</div>
-							<!--Header buttons SECTION-->
-              <div class="btnGlobal">
-						<a class="btn-floating btn-large waves-effect waves-light purple" id="newGame">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="descritpion" content="Roll The Dice - The Ultimate game" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<title>Roll The Dice - The Ultimate game v1.0</title>
+	</head>
+	<body class="#f0f4c3 lime lighten-4">
+		<main class="container">
+			<section class="row">
+				<header class="col s12 card-panel #f9fbe7 lime lighten-5 z-depth-4">
+					<div>
+						<h1 class="text-accent-2">Roll The Dice</h1>
+						<h5 class="descritpion">The Ultimate Game</h5>
+					</div>
+					<!--Header buttons SECTION-->
+					<div class="btnGlobal">
+						<a
+							class="btn-floating btn-large waves-effect waves-light purple"
+							id="newGame"
+						>
 							<i class="material-icons">casino</i>start
 						</a>
 
-						<a class="btn-floating btn-large waves-effect waves-light blue" id="volume_up">
+						<a
+							class="btn-floating btn-large waves-effect waves-light blue"
+							id="volume_up"
+						>
 							<i class="material-icons">volume_up</i>Up
 						</a>
-						<a class="btn-floating btn-large waves-effect waves-light orange" id="volume_off">
+						<a
+							class="btn-floating btn-large waves-effect waves-light orange"
+							id="volume_off"
+						>
 							<i class="material-icons">volume_off</i>Off
 						</a>
-                  <a class="btn-floating btn-large waves-effect waves-light grey sidenav-trigger" 
-							href="#slide-out" data-target="slide-out">
+						<a
+							class="btn-floating btn-large waves-effect waves-light grey sidenav-trigger"
+							href="#slide-out"
+							data-target="slide-out"
+						>
 							<i class="material-icons">settings</i>
 						</a>
-					</div> 
-					<audio src="sounds/newGameSound.mp3" type="audio" id="newGameSound"></audio>
-            </header>
-
-            <!--PLAYER ONE SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4 player-1 active">
-                <h4 id="player-1">Player 0ne</h4> 
-                  
-                <img src="images/player2.png" class="responsive-img" alt="playerOneAvatar">
-                    <div>
-                        <h4>Global  :</h4>
-                        <div class="playerOne-score" id="score-1"></div>
-                    </div>  
-                    <div>
-                        <h4>Round  :</h4>
-                        <div class="playerOne-round" id="round-1"></div>
-                    </div>    
-            </div>
-            <!--GAME ZONE DESCRIPTION -->
-            <div class="col s12 m4 l6 card">
-                <div class="card-content " id="gameZone">
-            		<div id="zone">
-                       <!--In this container come the random images-->
 					</div>
-                    <div id="deResult"></div>
-        		</div>
-				<div class="global row center-align">
+					<audio
+						src="sounds/newGameSound.mp3"
+						type="audio"
+						id="newGameSound"
+					></audio>
+				</header>
 
-                	<a class=" btn-large waves-effect waves-light yellow roll">
-							 <em class="material-icons">loop</em> Roll</a>
+				<!--PLAYER ONE SECTION-->
+				<div class="col s12 m4 l3 card #eeff41 z-depth-4 player-1 active">
+					<h4 id="player-1">Player 1</h4>
 
-                	<a class=" btn-large waves-effect waves-light green hold">
-							 <em class="material-icons">vpn_key</em>Hold</a>
+					<img
+						src="images/vainqueur.png"
+						class="responsive-img"
+						alt="playerOneAvatar"
+					/>
+					<div>
+						<h4>Global :</h4>
+						<div class="playerOne-score" id="score-1"></div>
+					</div>
+					<div>
+						<h4>Round :</h4>
+						<div class="playerOne-round" id="round-1"></div>
+					</div>
+				</div>
+				<!--GAME ZONE DESCRIPTION -->
+				<div class="col s12 m4 l6 card">
+					<div class="card-content" id="gameZone">
+						<div id="zone">
+							<!--In this container come the random images-->
+						</div>
+						<div id="deResult"></div>
+					</div>
+					<div class="global row center-align">
+						<a class="btn-large waves-effect waves-light yellow roll">
+							<em class="material-icons">loop</em> Roll</a
+						>
 
-                    <a class=" btn-large waves-effect waves-light blue reset">
-							 <em class="material-icons">delete_sweep</em>Reset</a>
-            	</div>
-                <p class="winner-annunce"></p>	
-            </div>
-								
-           <!--PLAYER TWO SECTION-->
-            <div class="col s12 m4 l3 card #eeff41  z-depth-4 player-2">
-                <h4 id="player-2">Player Two</h4> 
-                  
-                <img src="images/player.png" class="responsive-img" alt="playerTwoAvatar">
-                   <div>
-                        <h4>Global  :</h4>
-                        <div class="playerTwo-score" id="score-2"></div>
-                    </div>  
-                    <div>
-                        <h4>Round  :</h4>
-                        <div class="playerTwo-round" id="round-2"></div>
-                    </div> 
-            </div>
-		</section>  
-    </main>
-	 <!--RULES SIDENAV SECTION-->
-    <ul>
-         <li id="slide-out" class="sidenav #ffab40 orange accent-2">
-            <a href="#slide-out" data-target="slide-out" class="sidenav-close"><i class="material-icons">close</i></a>
-                <h1>Règles du jeu</h1>
-                  <div>
-                     <p>Le jeu comprend 2 joueurs sur un seul et même écran.</p>
-                     <p>Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).<br> 
-                        À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé <br> 
-                        autant de fois qu'il le souhaite. Le résultat d’un lancer est ajouté au ROUND.</p>
-                     <p>Lors de son tour, le joueur peut décider à tout moment de: </p>
-                    
-                     <p>Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. <br>
-                        Ce sera alors au tour de l’autre joueur de lancer le dé.</p>
-                     <p>S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.</p>
-                     <p>Le premier joueur qui atteint les 100 points sur global gagne le jeu.</p>
-                     <p>Amusez-vous bien !</p>
-                  </div>    
-        	</li>      
-    </ul> 
-	<footer class="center-align ">&copy;2021 - Jean Paul SOSSAH</footer>
+						<a class="btn-large waves-effect waves-light green hold">
+							<em class="material-icons">vpn_key</em>Hold</a
+						>
 
+						<a class="btn-large waves-effect waves-light blue reset">
+							<em class="material-icons">delete_sweep</em>Reset</a
+						>
+					</div>
+					<p class="winner-annunce"></p>
+				</div>
 
-    <script src="js/animations.js"></script>
-    <script src="js/sounds.js"></script>
-</body>
+				<!--PLAYER TWO SECTION-->
+				<div class="col s12 m4 l3 card #eeff41 z-depth-4 player-0">
+					<h4 id="player-0">Player 2</h4>
+
+					<img
+						src="images/player.png"
+						class="responsive-img"
+						alt="playerTwoAvatar"
+					/>
+					<div>
+						<h4>Global :</h4>
+						<div class="playerTwo-score" id="score-0"></div>
+					</div>
+					<div>
+						<h4>Round :</h4>
+						<div class="playerTwo-round" id="round-0"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--RULES SIDENAV SECTION-->
+		<ul>
+			<li id="slide-out" class="sidenav #ffab40 orange accent-2">
+				<a href="#slide-out" data-target="slide-out" class="sidenav-close"
+					><em class="material-icons">close</em></a
+				>
+				<h1>Règles du jeu</h1>
+				<div>
+					<p>Le jeu comprend 2 joueurs sur un seul et même écran.</p>
+					<p>
+						Chaque joueur possède un score temporaire (ROUND) et un score global
+						(GLOBAL).<br />
+						À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer
+						un dé <br />
+						autant de fois qu'il le souhaite. Le résultat d’un lancer est ajouté
+						au ROUND.
+					</p>
+					<p>Lors de son tour, le joueur peut décider à tout moment de:</p>
+
+					<p>
+						Cliquer sur l’option “Hold”, qui permet d’envoyer les points du
+						ROUND vers le GLOBAL. <br />
+						Ce sera alors au tour de l’autre joueur de lancer le dé.
+					</p>
+					<p>
+						S’il obtient un 1, son score ROUND est perdu et c’est la fin de son
+						tour.
+					</p>
+					<p>
+						Le premier joueur qui atteint les 100 points sur global gagne le
+						jeu.
+					</p>
+					<p>Amusez-vous bien !</p>
+				</div>
+			</li>
+		</ul>
+		<footer class="center-align">&copy;2021 - Jean Paul SOSSAH</footer>
+
+		<script src="js/animations.js"></script>
+		<script src="js/sounds.js"></script>
+	</body>
 </html>
